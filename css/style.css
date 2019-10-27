@@ -44,8 +44,18 @@ h2 {
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 30px 20px;
+  position: relative;
 }
 
+.close {
+  border-radius:100%;
+  width: 20px;
+  height: 20px;
+  background: url('../img/close.png');
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .form__wrap input {
   margin-bottom: 10px;
   font-size: 11px;
