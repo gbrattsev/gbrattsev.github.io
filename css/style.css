@@ -32,6 +32,10 @@ h2 {
   z-index: 100;
 }
 
+.form.show {
+  display: block;
+}
+
 .form__wrap {
   margin: 0 auto;
   text-align: center;

@@ -4,22 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Event site</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:500&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="form">
+  <!-- <div class="form">
     <div class="form__wrap">
       <form action="script/send.php" method="POST">
         <input type="text" name="name" placeholder="Ваше имя" required>
-        <input type="phone" name="phone" placeholder="Ваш номер телефона" required>
+        <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
         <textarea name="text" placeholder="Текст заявки"></textarea>
         <button type="submit">Отправить</button>
       </form>
     </div>
+  </div> -->
+
+  <div class="form">
+    <div class="note"></div>
+    <div class="form__wrap">
+      <form class="ajax-contact-form" action="">
+          <input type="text" name="name" value="" placeholder="Ваше имя" required>
+          <input type="tel" name="tel" value="" placeholder="Ваш номер телефона" required>
+          <input type="email" name="email" value="" placeholder="Ваш e-mail адрес" required>
+          <textarea name="message" placeholder="Текст заявки"></textarea>
+        <input type="submit" name="submit" class="form-container__btn" value="Отправить">
+      </form>
+    </div>
   </div>
+
   <div class="bg">
     <div class="wrapper">
       <div class="title">
@@ -77,7 +91,7 @@
           <p>РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ ИДЕИ</p>
         </div> <!-- .box-contact__text-->
         <div class="button">
-          <button>&#9993; Ваш запрос</button>
+          <button class="btn">&#9993; Ваш запрос</button>
         </div> <!-- .button-->
       </div> <!-- .box-contact-->      
     </div><!-- conact .wrapper-->
@@ -216,5 +230,10 @@
       </div> <!-- .box-footer-->
     </div><!-- .footer > .wrapper-->
   </div><!-- .footer-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/contactform.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
