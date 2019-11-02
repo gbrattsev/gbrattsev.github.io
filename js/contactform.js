@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 
     $.ajax({
       type: "POST",
-      url: "https://formfarm.im/gbrattsev@gmail.com",
+      url: "https://formspree.io/xbjrbgog",
       data: str,
       success: function (msg) {
         if (msg == 'OK') {
