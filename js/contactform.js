@@ -1,22 +1,23 @@
 jQuery(document).ready(function($) {
 
-$(".ajax-contact-form").submit(function() {
-var str = $(this).serialize();
+  $(".ajax-contact-form").submit(function (e) {
+    e.preventDefault()
+    var str = $(this).serialize();
 
-$.ajax({
-type: "POST",
-url: "http://gbrattsev.github.io/contact.php",
-data: str,
-success: function(msg) {
-if(msg == 'OK') {
-result = '<p>Ваш заказ принят</p>';
-$(".fields").hide();
-} else {
-result = msg;
-}
-$('.note').html(result);
-}
-});
-return false;
-});
+    $.ajax({
+      type: "POST",
+      url: "https://formfarm.im/gbrattsev@gmail.com",
+      data: str,
+      success: function (msg) {
+        if (msg == 'OK') {
+          result = '<p>Ваш заказ принят</p>';
+          $(".fields").hide();
+        } else {
+          result = msg;
+        }
+        $('.note').html(result);
+      }
+    });
+    return false;
+  });
 });
