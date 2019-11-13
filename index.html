@@ -1,240 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Event site</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:500&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="form">
-    <div class="form__wrap">
-      <form action="https://formfarm.im/gbrattsev@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Ваше имя" required>
-        <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
-        <textarea name="text" placeholder="Текст заявки"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- <div class="form">
-    <div class="note"></div>
-    <div class="form__wrap">
-      <div class="close"></div>
-      <form class="ajax-contact-form" action="">
-          <input type="text" name="name" value="" placeholder="Ваше имя" required>
-          <input type="tel" name="tel" value="" placeholder="Ваш номер телефона" required>
-          <input type="email" name="email" value="" placeholder="Ваш e-mail адрес" required>
-          <textarea name="message" placeholder="Текст заявки"></textarea>
-        <input type="submit" name="submit" class="form-container__btn" value="Отправить">
-      </form>
-    </div>
-  </div> -->
-
-  <div class="bg">
-    <div class="wrapper">
-      <div class="title">
-        <h1>приглашаем отметить<br>самый ужас-с-сный праздник</h1>
-        <p>отпразднуй Хеллоуин вместе с нами</p>
-      </div><!-- .title-->      
-    </div><!-- bg > .wrapper-->    
-  </div> <!-- .bg -->
-  <div class="wrapper wrapper-gray">
-    <div class="stat">
-      <div class="stat__item">
-        <h2>2</h2>
-        <h3>дня</h3>
-        <p>веселья</p>
-      </div> <!-- .stat__item-->
-      <div class="stat__item">
-        <h2>15</h2>
-        <h3>групп</h3>
-        <p>на сцене</p>
-      </div> <!-- .stat__item-->
-      <div class="stat__item">
-        <h2>3</h2>
-        <h3>сцены</h3>
-        <p>для артистов</p>
-      </div> <!-- .stat__item-->
-      <div class="stat__item">
-        <h2>80</h2>
-        <h3>площадь</h3>
-        <p>зала</p>
-      </div> <!-- .stat__item-->
-    </div> <!-- .stat-->
-  </div> <!-- .wrapper-gray-->
-  <div class="wrapper">    
-    <h2>праздники, которые мы организовали</h2>
-    <div class="box-party">
-      <div class="box-party__item">
-        <img src="./img/party-1.png" alt="Party 1">
-        <h3>Старый Новый Год</h3>
-      </div> <!-- .box-party__item-->
-      <div class="box-party__item">
-        <img src="./img/party-2.png" alt="Party 2">
-        <h3>День Святого Валентина</h3>
-      </div> <!-- .box-party__item-->
-      <div class="box-party__item">
-        <img src="./img/party-3.png" alt="Party 3">
-        <h3>День Студенчества</h3>
-      </div> <!-- .box-party__item-->
-    </div> <!-- .box-party-->
-  </div> <!-- .wrapper > box-party -->
-  <div class="contact">
-    <div class="wrapper">
-      <div class="box-contact">
-        <div class="box-contact__text">
-          <h3>ЛУЧШИЕ ПРАЗДНИКИ</h3>
-          <p>РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ ИДЕИ</p>
-        </div> <!-- .box-contact__text-->
-        <div class="button">
-          <button class="btn">&#9993; Ваш запрос</button>
-        </div> <!-- .button-->
-      </div> <!-- .box-contact-->      
-    </div><!-- conact .wrapper-->
-  </div> <!-- .contact -->
-  <div class="wrapper">
-    <h2>Что будет на хеллоуине?</h2>
-    <div class="grid">
-      <div class="grid-item grid-one">
-        <img src="./img/icon-1.svg" alt="Тыква">
-        <h3>СОБРАННЫЕ<br>ТЫКВЫ</h3>
-      </div>
-      <div class="grid-item grid-two">
-        <img src="./img/icon-2.svg" alt="Свеча">
-        <h3>МИСТИЧЕСКАЯ<br>АТРИБУТИКА</h3>
-      </div>
-      <div class="grid-item grid-three">
-        <img src="./img/icon-3.svg" alt="Монстр">
-        <h3>ТЕМАТИЧЕСКИЕ<br>КОСТЮМЫ</h3>
-      </div>
-      <div class="grid-item grid-four">
-        <img src="./img/icon-4.svg" alt="Посох">
-        <h3>МНОЖЕСТВО<br>КВЕСТОВ</h3>
-      </div>
-      <div class="grid-item grid-five">
-        <img src="./img/icon-5.svg" alt="Яд">
-        <h3>ШВЕДСКИЙ<br>СТОЛ</h3>
-      </div>
-      <div class="grid-item grid-six">
-        <img src="./img/icon-6.svg" alt="Призрак">
-        <h3>СМЕШНЫЕ<br>КОНКУРСЫ</h3>
-      </div>
-    </div> <!-- .grid -->
-  </div> <!-- .wrapper > icons -->
-  <div class="grid-photo">
-    <div class="grid-photo__item">
-      <img src="./img/photo-1.png" alt="Photo 1">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-2.png" alt="Photo 2">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-3.png" alt="Photo 3">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-4.png" alt="Photo 4">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-5.png" alt="Photo 5">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-6.png" alt="Photo 6">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-7.png" alt="Photo 7">
-    </div><!-- .grid-photo__item-->
-    <div class="grid-photo__item">
-      <img src="./img/photo-8.png" alt="Photo 8">
-    </div><!-- .grid-photo__item-->
-  </div> <!-- .grid-photo-->
-  <div class="wrapper">
-    <h2>отзывы ПОСЕТИТЕЛЕЙ</h2>
-    <div class="box-feedback">
-      <div>
-        <p class="feedback">Это было, пожалуй, лучшее мероприятие из всех, на которых я была. Отличная музыка и интерьер. Не пожалела, что позвала своих другей. Мы отлично провели время и я обязательно приду на следущие мероприятия. Не сомневайтесь, будет весело.</p>
-        <p class="name">Анастасия Звягинцева</p>
-      </div>
-      <div>
-        <p class="feedback">Долго думал: стоит идти или нет. В последний момент решился и не пожалел. Участвовал в конкурсах, получил множество подарков, бонусов и даже бонусную карту в магазин DNS. В следующем году тоже пойду и приведу своих друзей.</p>
-        <p class="name">Валерий Атлетов</p>
-      </div>
-      <div>
-        <p class="feedback">Самый мистический день в году хочется провести как-то по особенному... Искал мероприятия и наткнулся на этот сайт. Изучив локацию, программу и прочее, решил выбрать именно их. Это лучшее решение! Зовите сюда всех своих друзей и подруг!</p>
-        <p class="name">Максим Семенов</p>
-      </div>
-    </div> <!-- .box-feedback-->
-  </div><!-- .wrapper > feedback-->
-  <div class="contact">
-    <div class="wrapper">
-      <div class="box-contact">
-        <div class="box-contact__text">
-          <h3>ХОТИТЕ К НАМ?</h3>
-          <p>ОСТАВЬ ЗАЯВКУ ПЕРЕД ПОСЕЩЕНИЕМ</p>
-        </div> <!-- .box-contact__text-->
-        <div class="button">
-          <button class="btn">&#9993; Ваш запрос</button>
-        </div> <!-- .button-->
-      </div> <!-- .box-contact-->      
-    </div><!-- conact .wrapper-->
-  </div> <!-- .contact -->
-  <div class="wrapper">
-    <h2>КОНТАКТЫ</h2>
-    <div class="footer-contact">
-      <div>
-        <img src="./img/pointer.svg" alt="Адрес">
-        <h3>АДРЕС:</h3>
-        <ul class="footer-contact__info">
-          <li>НЕВСКИЙ ПРОСПЕКТ 140,</li>
-          <li>ОФИС 140-142</li>
-        </ul>
-      </div>
-      <div>
-        <img src="./img/phone.svg" alt="Телефон">
-        <h3>ТЕЛЕФОН:</h3>
-        <ul class="footer-contact__info">
-          <li>8 (812) 111-22-33</li>
-          <li>8 (812) 111-22-33</li>
-        </ul>
-      </div>
-      <div>
-        <img src="./img/clock.svg" alt="Часы">
-        <h3>ВРЕМЯ РАБОТЫ:</h3>
-        <ul class="footer-contact__info">
-          <li>ПН-СБ</li>
-          <li>10:00 - 20:00</li>
-        </ul>
-      </div>
-      <div>
-        <img src="./img/email.svg" alt="Email">
-        <h3>E-MAIL:</h3>
-        <ul class="footer-contact__info footer-contact__mail">
-          <li>INFO@VIP.RU</li>
-          <li>SUPPORT@VIP.RU</li>
-        </ul>
-      </div>
-    </div> <!-- .footer-contact-->
-  </div> <!-- .wrapper > bottom-->
-  <div class="footer">
-    <div class="wrapper">
-      <div class="box-footer">
-        <div>
-          <span>© 2019 Праздники с душой</span>
-        </div>
-        <div>
-            <span>Сайт верстал <a href="#">Геннадий Братцев</a></span>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>MySite</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="wrap header">
+        <div class="header__flex"><a class="logo" href="#">MySyte</a>
+          <div class="nav">
+            <div class="nav__icon"><span></span><span></span><span></span><span></span></div>
+            <ul class="nav__items">
+                        <li><a class="nav__item" href="#about">О нас</a></li>
+                        <li><a class="nav__item" href="#prices">Услуги</a></li>
+                        <li><a class="nav__item" href="#works">Портфолио</a></li>
+                        <li><a class="nav__item" href="#contacts">Контакты</a></li>
+            </ul>
           </div>
-      </div> <!-- .box-footer-->
-    </div><!-- .footer > .wrapper-->
-  </div><!-- .footer-->
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/contactform.js"></script>
-  <script src="js/script.js"></script>
-</body>
+        </div>
+        <h1 class="title">Мы делаем сайт таким, каким вы хотите его увидеть</h1>
+        <div class="header__form">
+          <form action="" method="post">
+            <input class="header__input" type="text" name="cont" required="required" placeholder="напишите ваш контакт для обратной связи"/>
+            <button class="header__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <div class="about wrap">
+        <div class="about__photo photo"><img src="img/about.png" alt="О нас"/>
+        </div>
+        <div class="about__description">
+          <h2 class="title-h2">О нас</h2>
+          <p class="text">Студия MySite - это небольшое семейное предприятие. Всё началось в далёком 2009-м году с простого увлечения. Сначала были небольшие статичные странички, потом мы начали создавать сайты на основе CMS Joomla и WordPress.</p>
+        </div>
+        <div class="about__text">
+          <p class="text">На данный момент мы занимаемся изготовлением сайтов под ключ. От небольшого одностраничника, до интернет-магазина на основе одной из самых популярных CMS - Wordpress. </p>Примеры работ студии вы можете уидеть в разделе “Портфолио” нашего сайта.
+          Работа с MySite - это точность и своевременность присоблюдении всех современных стандартов изготовления сайтов.
+        </div>
+      </div>
+    </section>
+    <section id="prices">
+      <div class="prices wrap">
+        <h2 class="title-h2">Услуги</h2>
+        <div class="price-items">
+              <div class="price-item price-item_landing">
+                <h3 class="title-h3 price-item__title">Сайт визитка</h3><span class="text price-item__text">от 8000 рублей</span>
+              </div>
+              <div class="price-item price-item_company">
+                <h3 class="title-h3 price-item__title">Сайт компании</h3><span class="text price-item__text">от 30000 рублей</span>
+              </div>
+              <div class="price-item price-item_market">
+                <h3 class="title-h3 price-item__title">Интернет магазин</h3><span class="text price-item__text">от 35000 рублей</span>
+              </div>
+              <div class="price-item price-item_blog">
+                <h3 class="title-h3 price-item__title">Блог</h3><span class="text price-item__text">от 10000 рублей</span>
+              </div>
+              <div class="price-item price-item_portfolio">
+                <h3 class="title-h3 price-item__title">Сайт портфолио</h3><span class="text price-item__text">от 15000 рублей</span>
+              </div>
+              <div class="price-item price-item_other">
+                <h3 class="title-h3 price-item__title">Другое</h3><span class="text price-item__text">стоимость обсуждается</span>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="works wrap">
+        <h2 class="title-h2">Наши работы</h2>
+        <div class="works-items">
+              <div class="works-item"><img src="img/blog.png" alt="Блог"/>
+                <div class="works-item__info">
+                  <h3 class="title-h3 works-item__title">Сайт личного блога</h3>
+                  <p class="text works-item__text">Сайт создан нами с нуля. Дизайн, вёрстка и “натягивание” верстки на CMS WordPress. Адаптивное и кроссбраузерное исполнение. Валидный семантический код, готовый для SEO-продвижения.</p>
+                </div>
+              </div>
+              <div class="works-item"><img src="img/landing.png" alt="Лэндинг-пэйдж"/>
+                <div class="works-item__info">
+                  <h3 class="title-h3 works-item__title">Лэндинг-пэйдж</h3>
+                  <p class="text works-item__text">Сайт создан нами с нуля. Дизайн, вёрстка и “натягивание” верстки на CMS WordPress. Адаптивное и кроссбраузерное исполнение. Валидный семантический код, готовый для SEO-продвижения.</p>
+                </div>
+              </div>
+              <div class="works-item"><img src="img/other.png" alt="Сайт фирмы"/>
+                <div class="works-item__info">
+                  <h3 class="title-h3 works-item__title">Сайт фирмы</h3>
+                  <p class="text works-item__text">Сайт создан нами с нуля. Дизайн, вёрстка и “натягивание” верстки на CMS WordPress. Адаптивное и кроссбраузерное исполнение. Валидный семантический код, готовый для SEO-продвижения.</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="contacts wrap">
+        <h2 class="title-h2">Контакты</h2>
+        <div class="flex">
+          <div class="contacts__info">
+            <div class="contacts__text">
+              <p>Для связи вы можете использовать форму обратной связи, а также позвонить нам по одному из указанных номеров:<span><a href="tel:+79220783788">+79220783788</a></span><span><a href="tel:+79630580279">+79630580279</a></span>Кроме того, можете написать нам на аккауты в соцсетях и мессенджерах: </p>
+            </div>
+            <div class="social"><a href="#" title="Вконтакте"><i class="sprite sprite-vk"></i></a><a href="#" title="Instagram"><i class="sprite sprite-instagram"></i></a><a href="#" title="FaceBook"><i class="sprite sprite-fb"></i></a><a href="#" title="Telegram"><i class="sprite sprite-tg"></i></a><a href="#" title="Viber"><i class="sprite sprite-viber"></i></a><a href="#" title="Whatsapp"><i class="sprite sprite-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="contacts__form">
+            <div class="form">
+              <form action="" method="post">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="required"/>
+                <input class="form__input" type="email" name="email" placeholder="Ваш e-mail адрес" required="required"/>
+                <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона" required="required"/>
+                <textarea class="form__textarea" name="message" placeholder="Текст заявки"></textarea>
+                <button class="form__button" type="submit" name="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer wrap">
+        <p>MySite 2019</p>
+        <div class="footer__social"><a href="#" title="Вконтакте"><i class="sprite sprite-vk"></i></a><a href="#" title="Instagram"><i class="sprite sprite-instagram"></i></a><a href="#" title="Telegram"><i class="sprite sprite-tg"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
