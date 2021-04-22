@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="type">Тип дома</label>
+    <input type="text" id="type" onchange="calc()">
+    <label for="square">Площадь</label>
+    <input type="text" id="square" onchange="calc()">
+    <div class="price"></div>
+
+    <script>
+        let inputField = document.querySelector('#square'),
+            itog = document.querySelector('.price');
+        function calc() {
+            let type = document.querySelector('#type');
+            let arr = inputField.value.split('').map(item => (item == ",")?".":item);
+            let price = arr.join('');
+            if(type.value !== "" && type.value !== null){
+                if(type.value !== '2'){
+                    if(+price <= 100) {
+                        itog.textContent = (+price * 31500).toFixed()
+                    } else if(+price > 100 && +price <= 130) {
+                        itog.textContent = (+price * 29400).toFixed()                    
+                    } else if(+price > 130 && +price <= 160) {
+                        itog.textContent = (+price * 27300).toFixed()                    
+                    } else {
+                        itog.textContent = (+price * 25200).toFixed()                    
+                    }
+                } else {
+                    if(+price <= 100) {
+                        itog.textContent = (+price * 29400).toFixed()
+                    } else if(+price > 100 && +price <= 130) {
+                        itog.textContent = (+price * 27300).toFixed()                    
+                    } else if(+price > 130 && +price <= 160) {
+                        itog.textContent = (+price * 25200).toFixed()                    
+                    } else {
+                        itog.textContent = (+price * 23100).toFixed()                    
+                    }                
+                }
+            } else {
+                itog.textContent = 'Укажите тип дома'
+            }
+        }
+    </script>
+</body>
+</html>
